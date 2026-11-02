@@ -1,0 +1,72 @@
+.logo-reveal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100000;
+  background-color: #170d06;
+  background-image: 
+    radial-gradient(circle at center, #2e180d 0%, #100804 90%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-reveal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.logo-reveal-emblem {
+  height: 90px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 1.5rem;
+  filter: drop-shadow(0 0 25px rgba(223, 170, 59, 0.45));
+}
+
+.logo-reveal-title {
+  font-family: var(--font-serif);
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: linear-gradient(180deg, #ffffff 0%, #f7dfa5 45%, #c89528 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.4rem;
+}
+
+.logo-reveal-divider {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #dfaa3b, transparent);
+  margin: 0.8rem 0;
+}
+
+.logo-reveal-subtitle {
+  font-size: 0.8rem;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: #cca86e;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.logo-reveal-tagline {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #eed79b;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 640px) {
+  .logo-reveal-emblem {
+    height: 70px;
+  }
+  .logo-reveal-title {
+    font-size: 2rem;
+  }
+}
+

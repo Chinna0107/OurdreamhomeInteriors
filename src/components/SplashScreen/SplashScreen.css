@@ -1,0 +1,181 @@
+/* ==========================================================================
+   ULTRA-LUXURY SPLASH SCREEN STYLES
+   ========================================================================== */
+
+.splash-screen-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  background-color: #120a05;
+  background-image: 
+    radial-gradient(circle at center, #2a160b 0%, #100804 75%, #080402 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  user-select: none;
+}
+
+/* Background Ambient Gold Particles & Rays */
+.splash-ambient-glow {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(223, 170, 59, 0.16) 0%, rgba(223, 170, 59, 0.03) 50%, transparent 70%);
+  filter: blur(40px);
+  pointer-events: none;
+  animation: pulseGlow 4s infinite alternate ease-in-out;
+}
+
+@keyframes pulseGlow {
+  0% { transform: scale(0.9); opacity: 0.6; }
+  100% { transform: scale(1.15); opacity: 1; }
+}
+
+.splash-center-stage {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2.5rem;
+  max-width: 600px;
+}
+
+/* Outer Rotating Gold Ring */
+.splash-ring-wrapper {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.splash-ring-outer {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1px dashed rgba(223, 170, 59, 0.4);
+  animation: rotateRing 15s linear infinite;
+}
+
+.splash-ring-inner {
+  position: absolute;
+  inset: 10px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(245, 215, 127, 0.5);
+  box-shadow: 0 0 25px rgba(223, 170, 59, 0.3), inset 0 0 20px rgba(223, 170, 59, 0.2);
+}
+
+@keyframes rotateRing {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.splash-logo-image {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.7));
+  position: relative;
+  z-index: 3;
+}
+
+/* Typography Reveal */
+.splash-brand-title {
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  line-height: 1.1;
+  margin-bottom: 0.4rem;
+  background: linear-gradient(180deg, #ffffff 0%, #f7dfa5 45%, #c89528 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 12px rgba(0, 0, 0, 0.5));
+}
+
+.splash-brand-sub {
+  font-size: 0.85rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #cca86e;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+/* Expanding Gold Divider with Diamond */
+.splash-divider-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1.1rem;
+}
+
+.splash-line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #dfaa3b, transparent);
+}
+
+.splash-diamond {
+  width: 6px;
+  height: 6px;
+  background: #dfaa3b;
+  transform: rotate(45deg);
+  box-shadow: 0 0 8px rgba(223, 170, 59, 0.8);
+}
+
+.splash-tagline {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #ebd7a3;
+  letter-spacing: 0.5px;
+  margin-bottom: 2.2rem;
+}
+
+/* Luxury Loading Progress Bar */
+.splash-progress-track {
+  width: 220px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.splash-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #9a6d1b 0%, #dfaa3b 50%, #f7dfa5 100%);
+  box-shadow: 0 0 10px rgba(247, 223, 165, 0.8);
+}
+
+.splash-counter-text {
+  font-size: 0.72rem;
+  letter-spacing: 2px;
+  color: #a89a8c;
+  margin-top: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+@media (max-width: 640px) {
+  .splash-brand-title {
+    font-size: 2.2rem;
+  }
+  .splash-ring-wrapper {
+    width: 120px;
+    height: 120px;
+  }
+  .splash-logo-image {
+    height: 68px;
+  }
+  .splash-tagline {
+    font-size: 1.05rem;
+  }
+}
+

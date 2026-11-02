@@ -1,0 +1,201 @@
+/* HERO BANNER SECTION (COMMON LUXURY STYLE FOR INNER PAGES) */
+.page-hero-banner {
+  position: relative;
+  min-height: 52vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5.5rem 2rem 4rem 2rem;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.page-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, 
+    rgba(14, 8, 4, 0.88) 0%, 
+    rgba(22, 13, 8, 0.82) 50%, 
+    rgba(17, 9, 5, 0.94) 100%);
+  z-index: 1;
+}
+
+.page-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.page-hero-eyebrow {
+  font-size: 0.75rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #dfaa3b;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  display: inline-block;
+}
+
+.page-hero-title {
+  font-family: var(--font-serif);
+  font-size: 3.4rem;
+  line-height: 1.15;
+  font-weight: 700;
+  color: #f7dfa5;
+  margin-bottom: 1rem;
+  background: linear-gradient(180deg, #ffffff 0%, #f7dfa5 50%, #c89528 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 10px rgba(0,0,0,0.5));
+}
+
+.page-hero-desc {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #d8cfc4;
+  max-width: 650px;
+  margin: 0 auto 1.8rem auto;
+}
+
+.page-hero-breadcrumbs {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(36, 21, 13, 0.7);
+  border: 1px solid rgba(212, 167, 66, 0.3);
+  padding: 0.4rem 1.1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: #eed79b;
+}
+
+.page-hero-breadcrumbs a {
+  color: #c4b9aa;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.page-hero-breadcrumbs a:hover {
+  color: #ffffff;
+}
+
+.page-hero-breadcrumbs .crumb-sep {
+  color: #dfaa3b;
+}
+
+/* PORTFOLIO SPECIFIC */
+.projects-page-wrapper {
+  padding: 5rem 3.5rem;
+  background-color: #fcf9f2;
+}
+
+.projects-filter-bar {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: #ffffff;
+  border: 1px solid #ebd9b8;
+  padding: 0.6rem 1.6rem;
+  border-radius: 25px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #55493e;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.filter-btn:hover {
+  border-color: #d4a742;
+  color: #170d06;
+}
+
+.filter-btn.active {
+  background: linear-gradient(135deg, #dfaa3b 0%, #c48b1c 100%);
+  color: #170d06;
+  font-weight: 600;
+  border-color: transparent;
+  box-shadow: 0 4px 14px rgba(223, 170, 59, 0.35);
+}
+
+.projects-portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.portfolio-card {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border: 1px solid #ebd9b8;
+  aspect-ratio: 4 / 3.2;
+  background: #1e120a;
+}
+
+.portfolio-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.portfolio-card:hover .portfolio-img {
+  transform: scale(1.08);
+}
+
+.portfolio-info {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(14, 8, 4, 0.95) 0%, rgba(14, 8, 4, 0.25) 60%, transparent 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.6rem;
+}
+
+.portfolio-title {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #f7dfa5;
+  margin-bottom: 0.25rem;
+}
+
+.portfolio-meta {
+  font-size: 0.8rem;
+  color: #d1c4b4;
+}
+
+@media (max-width: 1024px) {
+  .projects-portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .page-hero-banner {
+    padding: 4rem 1.2rem;
+    min-height: 45vh;
+  }
+  .page-hero-title {
+    font-size: 2.4rem;
+  }
+  .projects-page-wrapper {
+    padding: 3.5rem 1.5rem;
+  }
+  .projects-portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}

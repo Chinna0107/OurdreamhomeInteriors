@@ -1,0 +1,661 @@
+/* ==========================================================================
+   CONTACT PAGE - 8 COMPLETE LUXURY SECTIONS
+   ========================================================================== */
+
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* SECTION HEADINGS */
+.cp-section-header {
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+
+.cp-eyebrow {
+  font-size: 0.74rem;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: #9f7524;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 0.6rem;
+}
+
+.cp-eyebrow.light {
+  color: #dfaa3b;
+}
+
+.cp-eyebrow::before,
+.cp-eyebrow::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 25px;
+  height: 1px;
+  background: #c59b27;
+  margin: 0 10px;
+}
+
+.cp-title {
+  font-family: var(--font-serif);
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #24170d;
+  line-height: 1.2;
+}
+
+.cp-title.light {
+  color: #f7eedc;
+}
+
+.cp-subtext {
+  font-size: 0.95rem;
+  color: #63574c;
+  margin-top: 0.5rem;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cp-subtext.light {
+  color: #c4b9aa;
+}
+
+/* ==========================================================================
+   2. CONTACT INFORMATION SECTION (5 CARDS)
+   ========================================================================== */
+.contact-info-grid-section {
+  padding: 5.5rem 3.5rem;
+  background-color: #f7f1e6;
+}
+
+.contact-info-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.contact-channel-card {
+  background: #ffffff;
+  border: 1px solid #ebd9b8;
+  border-radius: 14px;
+  padding: 2.2rem 1.4rem;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+  transition: all 0.35s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-channel-card:hover {
+  transform: translateY(-7px);
+  border-color: #d4a742;
+  box-shadow: 0 14px 28px rgba(162, 126, 68, 0.16);
+}
+
+.channel-icon-bubble {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #fbf6ec;
+  border: 1px solid #ebd9b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9f7524;
+  margin-bottom: 1.2rem;
+  transition: transform 0.3s;
+}
+
+.contact-channel-card:hover .channel-icon-bubble {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #dfaa3b 0%, #c48b1c 100%);
+  color: #170d06;
+}
+
+.channel-title {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  color: #24170d;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.channel-value {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #9f7524;
+  margin-bottom: 0.5rem;
+  word-break: break-word;
+}
+
+.channel-desc {
+  font-size: 0.8rem;
+  color: #63574c;
+  line-height: 1.5;
+  margin-bottom: 1.4rem;
+  flex: 1;
+}
+
+.channel-action-btn {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #170d06;
+  background: linear-gradient(135deg, #dfaa3b 0%, #c48b1c 100%);
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.channel-action-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(223, 170, 59, 0.4);
+}
+
+/* ==========================================================================
+   3. CONTACT ENQUIRY FORM (TWO-COLUMN FORM + IMAGE) - LUXURY ENHANCED
+   ========================================================================== */
+.contact-form-layout-section {
+  padding: 5.5rem 3.5rem;
+  background-color: #fbf7ee;
+}
+
+.contact-form-split-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.cp-form-card {
+  background: #ffffff;
+  border: 1px solid #ebd9b8;
+  border-radius: 20px;
+  padding: 3.2rem 3rem;
+  box-shadow: 0 16px 40px rgba(162, 126, 68, 0.1);
+  position: relative;
+}
+
+.cp-form-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #9a6d1b 0%, #dfaa3b 50%, #f7dfa5 100%);
+  border-radius: 20px 20px 0 0;
+}
+
+.cp-form-card h3 {
+  font-family: var(--font-serif);
+  font-size: 2.35rem;
+  color: #24170d;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  line-height: 1.15;
+}
+
+.cp-form-card .cp-form-intro {
+  font-size: 0.94rem;
+  color: #63574c;
+  margin-bottom: 2rem;
+  line-height: 1.65;
+}
+
+.form-grid-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.cp-field-group {
+  margin-bottom: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.cp-field-label {
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: #3e3226;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.cp-input-control,
+.cp-select-control,
+.cp-textarea-control {
+  width: 100%;
+  padding: 0.85rem 1.1rem;
+  border: 1.5px solid #e5dccf;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 0.92rem;
+  color: #24170d;
+  background: #faf7f2;
+  transition: all 0.25s ease;
+  box-sizing: border-box;
+}
+
+.cp-select-control {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%239f7524' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 16px;
+  padding-right: 2.5rem;
+}
+
+.cp-input-control:hover,
+.cp-select-control:hover,
+.cp-textarea-control:hover {
+  border-color: #d4a742;
+  background: #ffffff;
+}
+
+.cp-input-control:focus,
+.cp-select-control:focus,
+.cp-textarea-control:focus {
+  outline: none;
+  border-color: #dfaa3b;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(223, 170, 59, 0.16);
+}
+
+.cp-input-control::placeholder,
+.cp-textarea-control::placeholder {
+  color: #a49788;
+}
+
+/* SUBMIT BUTTON ENHANCED (LUXURY GOLD WITH SHIMMER & HOVER LIFT) */
+.form-submit-btn-enhanced {
+  width: 100%;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  background: linear-gradient(135deg, #e4b240 0%, #c48b1c 50%, #9a6d1b 100%);
+  color: #170d06;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(223, 170, 59, 0.35);
+  transition: all 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+  overflow: hidden;
+  margin-top: 0.6rem;
+}
+
+.form-submit-btn-enhanced::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -80%;
+  width: 50%;
+  height: 200%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+  transform: rotate(25deg);
+  transition: all 0.75s ease;
+}
+
+.form-submit-btn-enhanced:hover::before {
+  left: 130%;
+}
+
+.form-submit-btn-enhanced:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(223, 170, 59, 0.55);
+  background: linear-gradient(135deg, #f7dfa5 0%, #dfaa3b 50%, #b8860b 100%);
+}
+
+.form-submit-btn-enhanced:active {
+  transform: translateY(-1px);
+}
+
+/* Side Image Frame */
+.cp-form-img-frame {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 16px 36px rgba(100, 70, 30, 0.16);
+  border: 4px solid #ffffff;
+  aspect-ratio: 4 / 4.6;
+  position: relative;
+}
+
+.cp-form-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cp-form-badge {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  right: 1.5rem;
+  background: rgba(22, 13, 8, 0.92);
+  border: 1px solid #c59b27;
+  padding: 1.2rem;
+  border-radius: 12px;
+  color: #eed79b;
+  backdrop-filter: blur(6px);
+}
+
+.cp-form-badge-title {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #f7dfa5;
+  margin-bottom: 0.25rem;
+}
+
+.cp-form-badge-text {
+  font-size: 0.8rem;
+  color: #c9bea9;
+  line-height: 1.45;
+}
+
+/* ==========================================================================
+   4. WHY CONTACT US SECTION (FOUR FEATURE CARDS)
+   ========================================================================== */
+.why-contact-section {
+  padding: 5.5rem 3.5rem;
+  background: linear-gradient(135deg, #f7f1e6 0%, #eee4d1 100%);
+  border-top: 1px solid #e5d5be;
+  border-bottom: 1px solid #e5d5be;
+}
+
+.why-contact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.8rem;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.why-contact-card {
+  background: #ffffff;
+  border: 1px solid #ebd9b8;
+  border-radius: 12px;
+  padding: 2.2rem 1.6rem;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+.why-contact-card:hover {
+  transform: translateY(-5px);
+  border-color: #d4a742;
+  box-shadow: 0 12px 26px rgba(162, 126, 68, 0.12);
+}
+
+.why-contact-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #fbf6ec;
+  border: 1px solid #ebd9b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9f7524;
+  margin: 0 auto 1.2rem auto;
+}
+
+.why-contact-title {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  color: #24170d;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.why-contact-desc {
+  font-size: 0.85rem;
+  color: #63574c;
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   5. OUR LOCATION / GOOGLE MAPS SECTION
+   ========================================================================== */
+.location-map-section {
+  padding: 5.5rem 3.5rem;
+  background-color: #f7f1e6;
+}
+
+.location-map-card {
+  max-width: 1240px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #ebd9b8;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 32px rgba(162, 126, 68, 0.1);
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+}
+
+.location-map-iframe-wrap {
+  width: 100%;
+  height: 420px;
+  background: #eee;
+}
+
+.location-map-iframe-wrap iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.location-address-box {
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.location-address-box h3 {
+  font-family: var(--font-serif);
+  font-size: 1.85rem;
+  color: #24170d;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.location-brand-name {
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #9f7524;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+.location-address-text {
+  font-size: 0.95rem;
+  color: #55493e;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.btn-open-maps {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #dfaa3b 0%, #c48b1c 100%);
+  color: #170d06;
+  font-weight: 600;
+  font-size: 0.88rem;
+  padding: 0.75rem 1.6rem;
+  border-radius: 25px;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(223, 170, 59, 0.35);
+  transition: all 0.3s ease;
+}
+
+.btn-open-maps:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(223, 170, 59, 0.5);
+}
+
+/* ==========================================================================
+   6. QUICK CONTACT / WHATSAPP SECTION (CALL + WHATSAPP CARDS)
+   ========================================================================== */
+.quick-connect-section {
+  padding: 5.5rem 3.5rem;
+  background: #170d07;
+  background-image: radial-gradient(ellipse at 50% 0%, #30190e 0%, #110804 90%);
+}
+
+.quick-connect-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.quick-connect-box {
+  background: rgba(36, 21, 13, 0.85);
+  border: 1px solid rgba(212, 167, 66, 0.3);
+  border-radius: 14px;
+  padding: 2.8rem 2.2rem;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quick-connect-box:hover {
+  transform: translateY(-6px);
+  border-color: #dfaa3b;
+  box-shadow: 0 16px 32px rgba(223, 170, 59, 0.2);
+}
+
+.quick-icon-wrap {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(45, 27, 17, 0.9);
+  border: 1px solid rgba(212, 167, 66, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #dfaa3b;
+  margin-bottom: 1.2rem;
+}
+
+.quick-box-title {
+  font-family: var(--font-serif);
+  font-size: 1.55rem;
+  color: #f7dfa5;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.quick-box-desc {
+  font-size: 0.88rem;
+  color: #d1c4b4;
+  margin-bottom: 1.5rem;
+}
+
+/* ==========================================================================
+   7. FAQS (ACCORDION)
+   ========================================================================== */
+.contact-faq-section {
+  padding: 5.5rem 3.5rem;
+  background-color: #fcf9f2;
+}
+
+.contact-faq-wrapper {
+  max-width: 850px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* ==========================================================================
+   8. FINAL CTA SECTION
+   ========================================================================== */
+.contact-final-cta-section {
+  padding: 5.5rem 3.5rem;
+  background: #170d07;
+  background-image: radial-gradient(ellipse at 50% 50%, #2f190e 0%, #120904 90%);
+  text-align: center;
+  border-top: 1px solid rgba(212, 167, 66, 0.25);
+}
+
+.contact-final-cta-box {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.contact-final-cta-box .cp-title {
+  margin-bottom: 1.2rem;
+}
+
+.contact-final-p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #d8cfc4;
+  margin-bottom: 2.2rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .contact-info-cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .contact-form-split-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .why-contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .location-map-card {
+    grid-template-columns: 1fr;
+  }
+  .location-map-iframe-wrap {
+    height: 320px;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-info-cards-grid,
+  .why-contact-grid,
+  .quick-connect-grid {
+    grid-template-columns: 1fr;
+  }
+  .form-grid-row-2 {
+    grid-template-columns: 1fr;
+  }
+  .cp-form-card {
+    padding: 2.2rem 1.4rem;
+  }
+}
