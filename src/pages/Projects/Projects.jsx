@@ -6,6 +6,7 @@ import heroProjectsImg from '../../assets/hero-projects.jpg';
 import Lightbox from '../../components/Lightbox/Lightbox';
 import Reveal from '../../components/Reveal';
 import './Projects.css';
+import jk from '../../assets/7.png';
 
 export default function Projects() {
   const [filter, setFilter] = useState('All');
@@ -22,7 +23,7 @@ export default function Projects() {
       title: 'Modern Island Kitchen',
       category: 'Kitchen',
       location: 'MR Palli, Tirupati',
-      image: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80'
+      image: jk
     },
     {
       title: 'Master Bedroom with Ambient Glow',

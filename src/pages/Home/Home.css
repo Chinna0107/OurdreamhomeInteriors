@@ -340,6 +340,55 @@
 }
 
 /* ==========================================================================
+   3B. BEFORE & AFTER TRANSFORMATIONS
+   ========================================================================== */
+.transformations-section {
+  padding: 5.5rem 3.5rem;
+  background-color: #fcf9f2;
+}
+
+.transformations-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.transformation-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.transformation-card-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4px;
+}
+
+.transformation-card-info h3 {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  color: #24170d;
+  font-weight: 700;
+  margin: 0;
+}
+
+.transformation-card-info span {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+@media (max-width: 1024px) {
+  .transformations-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* ==========================================================================
    4. OUR SERVICES SECTION (6 PREMIUM CARDS)
    ========================================================================== */
 .services-highlight-section {

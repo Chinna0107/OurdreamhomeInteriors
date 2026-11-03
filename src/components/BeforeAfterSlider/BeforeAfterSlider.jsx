@@ -45,7 +45,7 @@ export default function BeforeAfterSlider({
     >
       {/* After image (Base full width) */}
       <div className="ba-image-layer">
-        <img src={afterImage} alt={afterLabel} />
+        <img src={afterImage} alt={afterLabel} style={{ width: '100%', height: '100%', objectFit: 'cover' }} onDragStart={(e) => e.preventDefault()} />
       </div>
 
       {/* Before image (Clipped to slider percentage) */}
@@ -53,7 +53,7 @@ export default function BeforeAfterSlider({
         className="ba-before-layer"
         style={{ clipPath: `inset(0 ${100 - sliderPos}% 0 0)` }}
       >
-        <img src={beforeImage} alt={beforeLabel} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        <img src={beforeImage} alt={beforeLabel} style={{ width: '100%', height: '100%', objectFit: 'cover' }} onDragStart={(e) => e.preventDefault()} />
       </div>
 
       {/* Divider Gold Handle */}

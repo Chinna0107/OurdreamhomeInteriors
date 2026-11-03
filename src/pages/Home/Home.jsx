@@ -31,7 +31,16 @@ import {
 import { InstagramIcon } from '../../components/SocialIcons';
 import Reveal from '../../components/Reveal';
 import Counter from '../../components/Counter/Counter';
+import BeforeAfterSlider from '../../components/BeforeAfterSlider/BeforeAfterSlider';
 import './Home.css';
+import beforeLiving from '../../assets/before.jpg';
+import afterLiving from '../../assets/after.jpg';
+import beforeWardrobe from '../../assets/before-wardrobe.jpg';
+import afterWardrobe from '../../assets/gallery4.jpg';
+import beforeKitchen from '../../assets/before-kitchen.jpg';
+import afterKitchen from '../../assets/gallery1.jpg';
+import beforeBedroom from '../../assets/before-bedroom.jpg';
+import afterBedroom from '../../assets/gallery2.jpg';
 import ia from '../../assets/1.png';
 import ib from '../../assets/2.png';
 import ic from '../../assets/3.png';
@@ -73,7 +82,7 @@ export default function Home() {
       title: 'Bedrooms & Wardrobes',
       desc: 'Beautifully designed bedrooms and customized wardrobes that combine elegance, comfort and smart storage.',
       sublist: 'Master bedrooms • Sliding wardrobes • Custom storage',
-      image: 'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=800&q=80'
+      image: ie
     },
     {
       num: '03',
@@ -94,7 +103,7 @@ export default function Home() {
       title: 'Wall Panelling & Cladding',
       desc: 'Give your walls a premium appearance with stylish textures, decorative panels and modern cladding.',
       sublist: 'Wooden panels • Decorative walls • Textured finishes',
-      image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80'
+      image: ij
     },
     {
       num: '06',
@@ -448,6 +457,40 @@ I would like to request a Free Consultation & Quote.
               </div>
             </div>
           </Reveal>
+        </div>
+      </section>
+
+      {/* =====================================================================
+          3B. BEFORE & AFTER TRANSFORMATIONS
+          ===================================================================== */}
+      <section className="transformations-section">
+        <Reveal direction="up">
+          <div className="section-header">
+            <span className="section-label">TRANSFORMATIONS</span>
+            <h2 className="section-title">Before & After Showcase</h2>
+            <p className="section-desc">
+              Drag the golden divider to see the conversion from bare rooms to customized designer living.
+            </p>
+          </div>
+        </Reveal>
+
+        <div className="transformations-grid">
+          {[
+            { title: 'Living Room TV Feature Wall', location: 'Tolichowki, Hyderabad', before: beforeWardrobe, after: afterWardrobe },
+            { title: 'Modular Kitchen & Storage', location: 'Shaikpet, Hyderabad', before: beforeKitchen, after: afterKitchen },
+            { title: 'Designer Living Lounge', location: 'Jubilee Hills, Hyderabad', before: beforeLiving, after: afterLiving },
+            { title: 'Luxury Master Bedroom Suite', location: 'Tolichowki, Hyderabad', before: beforeBedroom, after: afterBedroom }
+          ].map((item, index) => (
+            <Reveal key={index} direction="up" delay={index * 0.08}>
+              <div className="transformation-card">
+                <BeforeAfterSlider beforeImage={item.before} afterImage={item.after} />
+                <div className="transformation-card-info">
+                  <h3>{item.title}</h3>
+                  <span>{item.location}</span>
+                </div>
+              </div>
+            </Reveal>
+          ))}
         </div>
       </section>
 
