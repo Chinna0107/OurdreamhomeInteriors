@@ -32,6 +32,14 @@ import { InstagramIcon } from '../../components/SocialIcons';
 import Reveal from '../../components/Reveal';
 import Counter from '../../components/Counter/Counter';
 import './Home.css';
+import ia from '../../assets/1.png';
+import ib from '../../assets/2.png';
+import ic from '../../assets/3.png';
+import id from '../../assets/4.png';
+import ie from '../../assets/5.png';
+import ij from '../../assets/6.png';
+
+import ik from '../../assets/7.png';
 
 export default function Home() {
   // Hero Slider
@@ -58,7 +66,7 @@ export default function Home() {
       title: 'Modular Kitchens',
       desc: 'Modern, stylish and functional kitchens designed to make everyday cooking comfortable and enjoyable.',
       sublist: 'Modular cabinets • Storage solutions • Premium finishes',
-      image: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80'
+      image: ik
     },
     {
       num: '02',
@@ -72,14 +80,14 @@ export default function Home() {
       title: 'Living & TV Units',
       desc: 'Create welcoming living spaces with elegant TV units, decorative panels and contemporary furniture designs.',
       sublist: 'TV units • Wall units • Decorative furniture',
-      image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80'
+      image: ib
     },
     {
       num: '04',
       title: 'False Ceiling (POP / Gypsum)',
       desc: 'Enhance your interiors with stylish ceiling designs, modern lighting and beautiful finishing.',
       sublist: 'POP designs • Gypsum ceilings • Cove lighting',
-      image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80'
+      image: id
     },
     {
       num: '05',
@@ -408,7 +416,7 @@ I would like to request a Free Consultation & Quote.
           <Reveal direction="right" duration={0.8}>
             <div className="about-intro-img-frame">
               <img 
-                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80" 
+                src={ia}
                 alt="Welcome to Our Dream Home Interiors" 
                 className="about-intro-img"
               />

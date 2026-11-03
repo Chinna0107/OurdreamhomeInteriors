@@ -15,6 +15,13 @@ import {
 import heroServicesImg from '../../assets/hero-services.jpg';
 import Reveal from '../../components/Reveal';
 import './Services.css';
+import ia from '../../assets/1.png';
+import ib from '../../assets/2.png';
+import ic from '../../assets/3.png';
+import id from '../../assets/4.png';
+import ie from '../../assets/5.png';
+import ij from '../../assets/6.png';
+import ik from '../../assets/7.png';
 
 export default function Services() {
   const [openFaq, setOpenFaq] = useState(0);
@@ -34,7 +41,7 @@ export default function Services() {
         'Space-efficient layouts'
       ],
       ctaText: 'Explore Modular Kitchens',
-      image: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80'
+      image: ik
     },
     {
       num: '02',
@@ -50,7 +57,7 @@ export default function Services() {
         'Dressing units and storage'
       ],
       ctaText: 'Explore Bedrooms & Wardrobes',
-      image: 'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=800&q=80'
+      image: ie
     },
     {
       num: '03',
@@ -66,7 +73,7 @@ export default function Services() {
         'Living room space planning'
       ],
       ctaText: 'Explore Living & TV Units',
-      image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80'
+      image: ib
     },
     {
       num: '04',
@@ -82,7 +89,7 @@ export default function Services() {
         'Lighting integration'
       ],
       ctaText: 'Explore False Ceilings',
-      image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80'
+      image: id
     },
     {
       num: '05',
@@ -98,7 +105,7 @@ export default function Services() {
         'TV and accent walls'
       ],
       ctaText: 'Explore Wall Panelling',
-      image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80'
+      image: ij
     },
     {
       num: '06',
